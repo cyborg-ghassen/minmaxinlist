@@ -1,3 +1,12 @@
+def saisie():
+    n = int(input("Enter le nombre d'éléments: "))
+    A = []
+    for i in range(1, n+1):
+        print("Entrer l'élément ", i, ": ")
+        x = int(input())
+        A.append(x)
+    return A
+
 def max(A):
     max = A[0]
     for i in range(1, len(A)):
@@ -15,5 +24,5 @@ def min(A):
             continue
     return min
     
-A = [2,2,5,7,6,9]
+A = saisie()
 print("le max et le min sont: ",max(A), min(A))
